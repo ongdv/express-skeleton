@@ -1,7 +1,9 @@
 var express = require('express');
 const userService = require('./UserService');
 var router = express.Router();
+// 유저 컨트롤러
 
+// 유저 전체 목록 조회
 router.get('/', async (req, res, next) => {
   try {
     const result = await userService.getUserList();
